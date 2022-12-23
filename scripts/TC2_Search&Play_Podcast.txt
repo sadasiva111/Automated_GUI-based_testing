@@ -1,0 +1,23 @@
+//Searching and playing a podcast
+//Setup
+Call Scripts/Spotify_Webpage_Start.txt
+//Testing
+Begin TC2_Search&Play_Podcast.txt
+	//Click on search icon to search the podcast
+	Click "{ImageFolder}/1647704315278.png" 13 48
+	Sleep 2000
+	//Type a podcast name user need to listen
+	Paste "99% Invisible"
+	Sleep 3000
+	//Click on podcast album to open all podcasts
+	Click "{ImageFolder}/1647706980359.png" 18 31
+	Sleep 3000
+	//Click on play button to play the Podcast
+	Click "{ImageFolder}/1647707007422.png" 87 88
+	Sleep 5000
+	//Verifyiing that the podcast started paying
+	Check "{ImageFolder}/1647707693631.png" 49 55
+	Sleep 1000
+End
+//Teardown
+Call Scripts/Spotify_Teardown.txt

@@ -1,0 +1,18 @@
+//Common Teardown for all test cases
+Begin Spotify_Teardown.txt
+	If "{ImageFolder}/1647705037716.png" 52 46
+		//Click on pause button to stop the song
+		Click "{ImageFolder}/1647705037716.png" 52 46
+	EndIf
+	Sleep 3000
+	If "{ImageFolder}/1647707735092.png" 53 56
+		//To stop the podcast
+		Click "{ImageFolder}/1647707735092.png" 53 56
+	EndIf
+	Sleep 1000
+	//Click on home icon to go to hompage
+	Click "{ImageFolder}/1647705061970.png" 18 51
+	Sleep 1000
+	Click "{ImageFolder}/1647726389359.png" 93 51
+	Sleep 1000
+End

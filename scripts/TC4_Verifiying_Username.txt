@@ -1,0 +1,18 @@
+//Verifiying Username or Profile name of the user
+//Setup
+Call Scripts/Spotify_Webpage_Start.txt
+//Testing
+Begin TC4_Verifiying_Username.txt
+	//click on the profile icon
+	Click "{ImageFolder}/1647722515738.png" 19 54
+	Sleep 2000
+	//click on profile option to view the user name
+	Click "{ImageFolder}/1647722565151.png" 19 46
+	Sleep 2000
+	//verifying username
+	Check "{ImageFolder}/1647722717153.png" 47 61
+	Sleep 3000
+End
+//Teardown
+Call Scripts/Spotify_Teardown.txt
+

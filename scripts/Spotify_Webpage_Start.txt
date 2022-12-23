@@ -1,0 +1,11 @@
+//Starting the webpage of spotify
+//Assuming user already logged in
+Begin Spotify_Webpage_Start.txt
+	StartWeb "http://www.spotify.com"
+	Sleep 7000
+	MoveRelative "950" "450"
+	If {ImageFolder}/1647703745331.png 49 73
+		MouseScroll "8"
+		Click "{ImageFolder}/1647703457397.png" 50 49
+	EndIf
+End

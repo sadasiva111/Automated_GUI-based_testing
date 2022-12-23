@@ -1,0 +1,29 @@
+//Like and view liked songs or podcasts
+//Setup
+Call Scripts/Spotify_Webpage_Start.txt
+//Testing
+Begin TC5_Like&Unlike_song.txt
+	//Click on search icon to search the song
+	Click "{ImageFolder}/1647704315278.png" 13 48
+	Sleep 2000
+	//Type a song name user need to listen
+	Paste "Stay"
+	Sleep 3000
+	//Move position of the cursor to hover on the podcast for displaying the like button
+	MoveRelative "950" "45"
+	//Click on love icon to like an song or podcast
+	Click "{ImageFolder}/1647724212393.png" 51 45
+	Sleep 1000
+	//Verifiy that song is liked
+	Check "{ImageFolder}/1647724254981.png" 49 48
+	MoveRelative "-950" "-45"
+	Sleep 1000
+	//Click on green love icon to unlike an song or podcast
+	Click "{ImageFolder}/1647724273123.png" 16 46
+	Sleep 1000
+	//Verifiy that song is unliked
+	Check "{ImageFolder}/1647724344231.png" 51 49
+	Sleep 5000
+End
+//Teardown
+Call Scripts/Spotify_Teardown.txt

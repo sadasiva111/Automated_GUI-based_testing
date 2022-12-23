@@ -1,0 +1,20 @@
+//Testing of the full suite
+//Begining of the test_suite
+Begin Spotify_Suite.txt
+	//Calling test_case_4
+	//Call Scripts/TC4_Verifiying_Username.txt
+	//Sleep 3000
+	//Calling test_case_5
+	//Call Scripts/TC5_Like&Unlike_song.txt
+	//Sleep 3000
+	//Calling test_case_1
+	Call Scripts/TC1_Search&Play_Song.txt
+	Sleep 3000
+	//Calling test_case_2
+	Call Scripts/TC2_Search&Play_Podcast.txt
+	Sleep 3000
+	//Calling test_case_3
+	//Call Scripts/TC3_Creating_Playlist.txt
+	//Sleep 3000
+End
+

@@ -1,0 +1,23 @@
+//Searching and playing a song
+//Setup
+Call Scripts/Spotify_Webpage_Start.txt
+//Testing
+Begin TC1_Search&Play_Song.txt
+	//Click on search icon to search the song
+	Click "{ImageFolder}/1647704315278.png" 13 48
+	Sleep 2000
+	//Type a song name user need to listen
+	Paste "Stay"
+	Sleep 3000
+	//Move position of the cursor to hover on the song for displaying the play button
+	MoveRelative "350" "225"
+	Sleep 1000
+	//Click on play button to play the song
+	Click "{ImageFolder}/1647704386389.png" 44 45
+	Sleep 15000
+	//Verifyiing that the song started paying
+	Check "{ImageFolder}/1647721809914.png" 47 49
+	Sleep 1000
+End
+//Teardown
+Call Scripts/Spotify_Teardown.txt
